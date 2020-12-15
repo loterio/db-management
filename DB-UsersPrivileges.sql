@@ -32,19 +32,15 @@ GRANT SELECT, UPDATE ON *.* TO estagiario;
 GRANT SELECT(modelo,armazenamento,valor) ON segundo.computadores TO representante;
 
 # 4. Atribua papéis aos usuários.
-GRANT supervisor TO a@localhost;		# supervisor do primeiro banco de dados
-# GRANT SELECT ON primeiro.* TO a@localhost;
+GRANT supervisor TO a@localhost;
 
-GRANT estagiario TO b@localhost;		# estagiário apenas no primeiro bd
-# GRANT SELECT ON primeiro.* TO b@localhost;
+GRANT estagiario TO b@localhost;	
 
 GRANT mecanico TO c@localhost;
 
-GRANT estagiario TO d@localhost;		# estagiário apenas no segundo bd
-# GRANT SELECT ON primeiro.* TO d@localhost;
+GRANT estagiario TO d@localhost;
 
-GRANT supervisor TO e@localhost;		# supervisor do segundo banco de dados
-# GRANT SELECT ON segundo.* TO a@localhost;
+GRANT supervisor TO e@localhost;
 
 GRANT boss TO f@localhost;
 
